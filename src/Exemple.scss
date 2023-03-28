@@ -6,15 +6,11 @@
     display: flex;
     justify-content: center;
     flex-direction: column-reverse;
-
     flex-wrap: wrap;
-
     margin-top: 2.5rem;
     margin-left: 1.5rem;
-
     border: 1px solid;
     border-radius: 5px;
-
 
     .chaqueEx {
       display: flex;
@@ -44,7 +40,6 @@
       transform: rotate(315deg);
       margin-left: 2rem;
     }
-
     p {
       &:after {
         content: "";
