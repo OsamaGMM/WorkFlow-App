@@ -1,0 +1,22 @@
+.MuiButtonGroup-root{
+    display: flex;
+    justify-content: center;
+}
+.uInteraction{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+    width: 100%;
+    margin-bottom: 2rem;
+
+    background-color: #ffffff;
+    border: 1px solid;
+
+
+    @media (min-width:650px) {
+    flex-direction: row;
+        justify-content: space-between;
+    }
+}

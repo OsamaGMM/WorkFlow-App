@@ -1,0 +1,64 @@
+.wrap {
+  display: flex;
+  justify-content: center;
+
+  .Exemple {
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+
+    flex-wrap: wrap;
+
+    margin-top: 2.5rem;
+    margin-left: 1.5rem;
+
+    border: 1px solid;
+    border-radius: 5px;
+
+
+    .chaqueEx {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      border-bottom: 1px solid;
+      border-left: 1px solid;
+      border-radius: 3px;
+      box-shadow: 3px 1px 5px;
+      margin: 8px;
+
+      backdrop-filter: blur(10px);
+
+      #date {
+        font-size: clamp(0.625rem, 0.5435rem + 0.4076vw, 1.5625rem);
+      }
+      p {
+        margin: 0.5rem;
+      }
+    }
+  }
+
+  .instructions {
+    #fleche {
+      width: 5rem;
+      transform: rotate(315deg);
+      margin-left: 2rem;
+    }
+
+    p {
+      &:after {
+        content: "";
+        display: block;
+        margin: auto;
+        height: 3px;
+        width: 0px;
+        background: transparent;
+        transition: width 0.5s ease, background-color 0.5s ease;
+      }
+      &:hover:after {
+        width: 100%;
+        background: blue;
+      }
+    }
+  }
+}

@@ -1,0 +1,72 @@
+.Appli{
+  background-size: cover;
+  background-image: url(./circle-scatter-haikei.svg);
+
+  @keyframes backGroundAnimer {
+    from {
+      background-position: 0 0;
+    }
+    to {
+      background-position: 100% 0;
+    }
+  }
+    background-position: 0px 0px;
+    background-repeat: repeat-x;
+    animation: backGroundAnimer 10s linear infinite alternate;
+  
+
+    header{
+        text-align: center;
+    }
+    .bienvenue{
+        height: 100vh;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        align-items: center;
+        @media (min-width:768px) {
+          grid-template-columns: 1fr 1fr;
+          grid-template-rows: 1fr;
+          .Header{
+            grid-row: 2/3;
+            grid-column: 1/3;
+          }
+        }
+        header {
+          h1 {
+            font-size: clamp(3rem, 1.3451rem + 1.087vw, 4.5rem);
+          }
+    
+        }
+    
+      }
+
+    .active{
+        color: aquamarine;
+    }
+
+    .taches{
+
+
+
+      height: 100vh;
+      position: relative;
+      h1{
+        text-align: center;
+        margin: 1.5rem;
+      }
+
+      .input{
+        display: flex;
+        gap: 1.5rem;
+        justify-content: center;
+
+        #input{
+          &:focus{
+            border: 3px solid blue;
+          }
+        }
+
+      }
+    }
+
+}

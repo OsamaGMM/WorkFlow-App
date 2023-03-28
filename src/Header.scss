@@ -1,0 +1,10 @@
+.Header{
+    text-align: center;
+    margin: 1rem;
+    // border: 1px solid red;
+
+    .capitalize::first-letter{
+        //mettre la premiere lettre du jour en majuscule
+        text-transform: capitalize;
+    }
+}

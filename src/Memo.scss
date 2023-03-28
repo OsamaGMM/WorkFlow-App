@@ -1,0 +1,27 @@
+.Memo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border-bottom: 1px solid;
+    border-left: 1px solid;
+    border-radius: 3px;
+    box-shadow: 3px 1px 5px;
+
+    div{
+        display: flex;
+        align-items: center;
+        #date{
+            font-size: clamp(0.625rem, 0.5435rem + 0.4076vw, 1.5625rem);
+        }
+        p{
+            margin: 0.5rem;
+        }
+    }
+}
+
+.complete{
+    opacity: 0.5;
+    background-color: rgba(3, 119, 18, 0.39);
+    transition: 1s;
+}

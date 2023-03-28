@@ -1,0 +1,15 @@
+html {
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+body{
+  margin: 0;
+  padding: 0;
+}
+p{
+  font-size: clamp(0.865rem, 0.5435rem + 0.4076vw, 1.5625rem);
+}

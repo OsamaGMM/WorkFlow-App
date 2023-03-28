@@ -1,0 +1,18 @@
+.Citation{
+    margin: 1rem 2rem;
+    text-align: center;
+
+        background: #a2d2ff;
+        border-radius: 0% 0% 0% 0% / 0% 0% 0% 0% ;
+        box-shadow: 20px 20px rgba(0,0,0,.15);
+        transition: all .4s ease;
+      
+      &:hover {
+        border-radius: 0% 0% 100% 100% / 0% 0% 10% 10% ;
+        box-shadow: 10px 10px rgba(0,0,0,.25);
+      }
+      p{
+        margin: 1rem 2rem;
+
+      }
+}
