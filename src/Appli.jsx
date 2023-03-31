@@ -47,12 +47,11 @@ export default function Appli() {
   }
 
   return (
-    
     <div className="Appli">
       <div className="bienvenue">
         <header>
           <h1>
-            Bienvenue <br /> sur <br /> WorkFlow
+            Bienvenue <br /> sur <br /> <span className="glow">WorkFlow</span>
           </h1>
           <Button variant="contained" onClick={smoothScroll}>
             Commencez
@@ -60,16 +59,7 @@ export default function Appli() {
         </header>
         <Citation />
         <Header date={new Date()} />
-
-
       </div>
-
-
-
-
-
-
-
 
       <div className="taches">
         <InputUtilisateur setMemos={setMemos} />
@@ -82,8 +72,6 @@ export default function Appli() {
           memosFiltrer={memosFiltrer}
         />
       </div>
-
-
     </div>
   );
 }

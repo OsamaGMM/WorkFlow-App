@@ -1,7 +1,6 @@
 .Appli{
   background-size: cover;
   background-image: url(./circle-scatter-haikei.svg);
-
   @keyframes backGroundAnimer {
     from {
       background-position: 0 0;
@@ -12,13 +11,21 @@
   }
     background-position: 0px 0px;
     background-repeat: repeat-x;
-    animation: backGroundAnimer 20s linear infinite alternate;
+    animation: backGroundAnimer 45s linear infinite alternate;
   
-
     header{
         text-align: center;
     }
     .bienvenue{
+      @keyframes loadTransition {
+        from{
+          opacity: 0;
+        }
+        to{
+          opacity: 1;
+        }
+      }
+      animation: loadTransition 1s ease-in;
         height: 100vh;
         display: grid;
         grid-template-rows: 1fr 1fr;
@@ -32,10 +39,27 @@
           }
         }
         header {
+          overflow: hidden;
           h1 {
             font-size: clamp(3rem, 1.3451rem + 1.087vw, 4.5rem);
+            .glow{
+              
+              font-size: larger;
+                padding: 64px;
+                background: linear-gradient(to right, hsl(182, 58%, 65%) 5%, hsl(182, 71%, 47%) 10%, hsl(0, 0%, 0%) 20%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                animation: glow 5s infinite linear;
+              @keyframes glow {
+                from {
+                  background-position: 0;
+                }
+                to {
+                  background-position: 900px;
+                }
+            }
           }
-    
+        }
         }
     
       }
@@ -59,7 +83,7 @@
 
         #input{
           &:focus{
-            border: 3px solid blue;
+            border: 3px solid #a2d2ff;
           }
         }
 
@@ -67,3 +91,4 @@
     }
 
 }
+

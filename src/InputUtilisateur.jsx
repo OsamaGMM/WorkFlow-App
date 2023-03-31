@@ -36,7 +36,7 @@ function InputUtilisateur({ setMemos }) {
     <div className="InputUtilisateur">
       <label>
         <input type="text" ref={refText} placeholder="Ajouter une tâche..." />
-        <Button variant="outlined" size="small" onClick={ajouterMemo}>
+        <Button variant="contained" size="small" onClick={ajouterMemo}>
           AJOUTER
         </Button>
       </label>

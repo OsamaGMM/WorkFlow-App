@@ -42,7 +42,7 @@ function Filtre({ memos, setMemos, setMemosFiltrer }) {
   return (
     <div className="uInteraction">
       <ButtonGroup
-        color="primary"
+        color="success"
         variant="text"
         aria-label="outlined button group"
       >
