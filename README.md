@@ -6,7 +6,7 @@ Application de gestion de tâches fait en React.js pour le côté client. J'ai c
 
 Ajouter, supprimer et filtrer des tâches.
 
-Date, heure et temperateur à l'aide d'un API
+Date, heure et temperature à l'aide d'un API
 
 ## Live Démo
 
