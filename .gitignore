@@ -11,8 +11,10 @@
 # testing
 /coverage
 
+
 # production
 /build
+src/Code
 
 # misc
 .DS_Store
